@@ -7,11 +7,38 @@ body,
 html {
   overflow-x: hidden;
 }
+.wrapper {
+  display: none;
+  opacity: 0;
+  transition: opacity ease-in 2s;
+}
+.loader {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+.loader h1 {
+  border: 3px dashed gray;
+  border-radius: 80px;
+  padding: 3rem;
+  color: #ffff;
+  animation-name: logo;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
 body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Muli", sans-serif;
   line-height: 1.5;
-  /* background-color:hsl(0, 0%, 47%); */
+
+  /* background-color: hsl(0, 0%, 47%); */
 }
 /* header */
 .header {
@@ -176,6 +203,9 @@ body {
 .aboutText p {
   text-align: center;
 }
+/* .skillsection {
+  background-color: #ffff;
+} */
 .skills {
   width: 100%;
   height: 40vh;
