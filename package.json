@@ -1,0 +1,22 @@
+{
+  "name": "alfred-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lori-Alfred/Alfred-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lori-Alfred/Alfred-portfolio/issues"
+  },
+  "homepage": "https://github.com/Lori-Alfred/Alfred-portfolio#readme",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}

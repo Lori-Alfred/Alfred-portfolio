@@ -2,8 +2,6 @@ const hamburger1 = document.querySelector(".hamburger  ");
 const firstNav1 = document.querySelector(".firstnav ");
 const wrapper = document.querySelector(".wrapper ");
 const loader = document.querySelector(".loader ");
-console.log("wrapper:", wrapper);
-console.log("loader:", loader);
 
 hamburger1.addEventListener("click", function () {
   firstNav1.classList.toggle("open");
@@ -18,7 +16,7 @@ function init() {
     setTimeout(() => {
       wrapper.style.opacity = "1";
     }, 50);
-  }, 4000);
+  }, 3000);
 }
 
 init();

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -41,7 +42,9 @@
       href="https://fonts.googleapis.com/css2?family=Muli&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrapper">
@@ -56,7 +59,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#Avideo">Story</a></li>
             <li><a href="#projects">Portfolio</a></li>
-            <li><a href="LoriAlfredResume.pdf" download>Resume</a></li>
+            <li>
+              <a
+                href="LoriAlfredResume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul>
@@ -65,7 +75,7 @@
             </li>
           </ul>
         </nav>
-        <h1>Lori Alfred</h1>
+        <h1 data-aos="fade-up">Lori Alfred</h1>
         <h3>Front-End Developer</h3>
         <div class="socialmedia">
           <a
@@ -85,13 +95,13 @@
 
       <!-- Quote -->
       <section class="quote">
-        <q> Turning ideas into reality </q>
+        <q data-aos="fade-up"> Turning ideas into reality </q>
       </section>
 
       <!-- About me -->
 
       <section class="about">
-        <div class="aboutText">
+        <div data-aos="fade-up" class="aboutText">
           <h2 id="about">About me</h2>
           <p>
             I am a front-end developer who is very passionate <br />
@@ -111,24 +121,37 @@
         <div id="#story">
           <video
             id="Avideo"
-            src="video/Alfred's story.mp4"
+            src="video/Alfredstory.mp4"
             controls
-            poster="coming soon"
             width="95%"
           ></video>
         </div>
       </section>
 
-      <div class="skills">
-        <h2>Skills</h2>
+      <div class="skills" data-aos="fade-up">
+        <h2 data-aos="fade-up">Skills</h2>
         <ul>
-          <li><i title="HTML" class="fab fa-html5 fa-5x"></i></li>
-          <li><i title="CSS" class="fab fa-css3-alt fa-5x"></i></li>
-          <li><i title="JAVASCRIPT" class="fab fa-js-square fa-5x"></i></li>
-          <li><i title="BOOTSTRAP" class="fab fa-bootstrap fa-5x"></i></li>
-          <li><i title="REACT" class="fab fa-react fa-5x"></i></li>
-          <li><i title="GIT" class="fab fa-git-alt fa-5x"></i></li>
-          <li><i title="FIGMA" class="fab fa-figma fa-5x"></i></li>
+          <li>
+            <i title="HTML" class="fab fa-html5 fa-5x"></i>
+          </li>
+          <li>
+            <i title="CSS" class="fab fa-css3-alt fa-5x"></i>
+          </li>
+          <li>
+            <i title="JAVASCRIPT" class="fab fa-js-square fa-5x"></i>
+          </li>
+          <li>
+            <i title="BOOTSTRAP" class="fab fa-bootstrap fa-5x"></i>
+          </li>
+          <li>
+            <i title="REACT" class="fab fa-react fa-5x"></i>
+          </li>
+          <li>
+            <i title="GIT" class="fab fa-git-alt fa-5x"></i>
+          </li>
+          <li>
+            <i title="FIGMA" class="fab fa-figma fa-5x"></i>
+          </li>
         </ul>
       </div>
 
@@ -315,6 +338,7 @@
     <div class="loader">
       <h1>LA</h1>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -326,5 +350,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
